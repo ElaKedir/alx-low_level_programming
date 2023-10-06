@@ -2,10 +2,10 @@
 #include <stdint.h>
 
 /**
- * main - Entry point
- *
- * Return: 0 (succes)
- */
+* main - Entry point
+*
+* Return: 0 (succes)
+*/
 
 int main(void)
 {
