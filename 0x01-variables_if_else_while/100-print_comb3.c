@@ -15,6 +15,7 @@ int main()
             {
                 putchar(i + '0');
                 putchar(j + '0');
+                
 
                 combinationnumber++;
                 if (combinationnumber < totalcombinations)
