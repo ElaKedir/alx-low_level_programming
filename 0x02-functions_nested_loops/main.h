@@ -1,5 +1,5 @@
-#ifndef (main.h)
-#define (main.h)
+#ifndef <main.h>
+#define <main.h>
 
 int main(void)
 {
@@ -11,6 +11,18 @@ putchar('c');
 putchar('h');
 putchar('a');
 putchar('r');
+putchar('\n');
+return (0);
+}
+
+int main(void)
+{
+char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+int i;
+for (i = 0; i < 26; i++)
+{
+putchar(alp[i]);
+}
 putchar('\n');
 return (0);
 }
