@@ -5,7 +5,7 @@ int main()
     int i = 0;
     int j = 0;
     int combinationnumber = 0;
-    int totalcombinations = 45;
+    int totalcombinations = 46;
     for(i = 0; i <=9; i++)
     {
         for(j = 0; j<=9; j++)
