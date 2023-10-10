@@ -1,7 +1,7 @@
 #ifndef (main.h)
 #define (main.h)
 
-int main (void)
+int main(void)
 {
 putchar('_');
 putchar('p');
