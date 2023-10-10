@@ -1,33 +1,13 @@
-#ifndef < main.h >
-#define < main.h >
-/**
- * main - Entry point
- *
- * Return: 0 (Success)
- */
-int main(void)
-{
-putchar('_');
-putchar('p');
-putchar('u');
-putchar('t');
-putchar('c');
-putchar('h');
-putchar('a');
-putchar('r');
-putchar('\n');
-return (0);
-}
-
-int main(void)
-{
-char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-int i;
-for (i = 0; i < 26; i++)
-{
-putchar(alp[i]);
-}
-putchar('\n');
-return (0);
-}
-#endif
+int _putchar(char c);
+void print_alphabet_x10(void);
+void print_alphabet(void);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int);
+int print_last_digit(int);
+void jeck_bauer(void);
+void times_table(void);
+int add(int, int);
+void print_to_90(int n);
+void print_times_table(int n);
