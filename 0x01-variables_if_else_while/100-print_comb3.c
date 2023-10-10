@@ -5,20 +5,23 @@ int main()
     int i = 0;
     int j = 0;
     int combinationnumber = 0;
-    for(i = 0; i <=9; i++)
+    int totalcombinations = 45;  // Total number of combinations (9 choose 2)
+
+    for(i = 0; i <= 9; i++)
     {
-        for(j = 0; j<=9; j++)
+        for(j = 0; j <= 9; j++)
         {
             if(i < j)
             {
                 putchar(i + '0');
                 putchar(j + '0');
-                if(i != 9 || j != 9)
+
+                combinationnumber++;
+                if (combinationnumber < totalcombinations)
                 {
                     putchar(',');
                     putchar(' ');
                 }
-                combinationnumber++;
             }
         }
     }
