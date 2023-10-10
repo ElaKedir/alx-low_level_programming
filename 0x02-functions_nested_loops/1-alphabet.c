@@ -1,20 +1,15 @@
 #include "main.h"
 
+/**
+ * main - Entry point
+ * print_alphabet -  p
+ * return: Alwyas 0 (success)
+ */
 
-	/**
-	 * main
-	 * print_alphabet -  p
-	 */
-
-
-	void print_alphabet(void)
+void print_alphabet(void)
 {
-		char letter;
-
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-	_putchar(letter);
-
+char letter;
+for (letter = 'a'; letter <= 'z'; letter++)
+_putchar(letter);
 _putchar('\n');
 }
-
