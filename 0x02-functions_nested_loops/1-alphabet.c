@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * print_alphabet -  p
- * return: Alwyas 0 (success)
- */
+* main - Entry point
+* print_alphabet -  p
+* return: Alwyas 0 (success)
+*/
 
 void print_alphabet(void)
 {
