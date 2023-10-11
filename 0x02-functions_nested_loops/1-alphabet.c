@@ -3,7 +3,7 @@
 /**
 * main - Entry point
 * print_alphabet -  p
-* return: Alwyas 0 (success)
+* Return: Alwyas 0 (success)
 */
 
 void print_alphabet(void)
