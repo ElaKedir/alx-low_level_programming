@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /*
-* print_alphabet_x10 - prints 1o rows of the whole alphabet in lowercase
+* print_alphabet_x10 - prints 1o rows of the whole alphabet in lowercase.
 */
 void print_alphabet_x10(void)
 {
@@ -18,5 +18,5 @@ i++;
 }
 _putchar('\n');
 j++;
-}      
+}
 }
