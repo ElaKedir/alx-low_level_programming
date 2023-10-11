@@ -6,19 +6,17 @@
 */
 void print_alphabet_x10(void)
 {
-for (int i = 0; i <= 10; i++)
-{
-for (int j = 'a'; j <= 'z'; j++)
-{
-putchar(j);
-}
-if (i != 10)
-putchar('\n');
-}
-}
-
-int main(void)
-{
-    print_alphabet_x10();
-    return 0;
+    int i;
+    int j = 0;
+while(j < 10)
+    {
+        i = 'a';
+        while(i <= 'z')
+        {
+            _putchar(i);
+            i++;
+        }
+    _putchar('\n');
+    j++;
+    }       
 }
