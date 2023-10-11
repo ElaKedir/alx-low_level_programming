@@ -2,7 +2,7 @@
 
 /**
 * main - Entry point
-* print_alphabet -  p
+* print_alphabet - Prints the lowercase alphabet followed by a new line.
 * Return: Alwyas 0 (success)
 */
 
