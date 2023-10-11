@@ -3,20 +3,21 @@
 
 /*
 *print_alphabet_x10 - prints 1o rows of the whole alphabet in lowercase
+*print_alphabet_x10 - prints 1o rows of the whole alphabet in lowercase
 */
 void print_alphabet_x10(void)
 {
-    int i;
-    int j = 0;
+int i;
+int j = 0;
 while(j < 10)
-    {
-        i = 'a';
-        while(i <= 'z')
-        {
-            _putchar(i);
-            i++;
-        }
-    _putchar('\n');
-    j++;
-    }       
+{
+i = 'a';
+while(i <= 'z')
+{
+_putchar(i);
+i++;
+}
+_putchar('\n');
+j++;
+}       
 }
