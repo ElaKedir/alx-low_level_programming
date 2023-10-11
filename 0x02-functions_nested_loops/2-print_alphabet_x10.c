@@ -1,9 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
-* print_alphabet_x10 - prints 1o rows of the whole alphabet in lowercase.
+
+/**
+* print_alphabet_x10 - Prints 10 rows of the whole alphabet in lowercase.
 */
+
 void print_alphabet_x10(void)
 {
 int i;
