@@ -10,13 +10,12 @@
 int print_last_digit(int n)
 {
 int i;
-scanf("%d", &i);
-if (i < 0)
+if (n < 0)
 {
-i = -1 * i;
+n = -n;
 }
-n = i % 10;
-putchar(n + '0');
+i = n % 10;
+putchar(i + '0');
 return (0);
 }
 
