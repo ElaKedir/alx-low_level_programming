@@ -4,13 +4,16 @@
 
 /**
 * _islower - checks whether or not the letter is lowercase.
+* @c: is the charcter to be checked
+* Return: 0 (Success)
 */
 
 int _islower(int c)
 {
-if (islower(c))
-_putchar('1');
+{
+if (c >= 'a' && c <= 'z')
+return (1);
 else
-_putchar('0');
 return (0);
+}
 }
