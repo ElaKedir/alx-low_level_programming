@@ -1,51 +1,39 @@
 #include <stdio.h>
 
 /**
- * main - fizzbuzz
- * Return: 0 (Success)
- */
+* main - fizzbuzz
+* Return: 0 (Success)
+*/
 
 int main(void)
-
 {
 int i;
 
 for (i = 1; i <= 100; i++)
 {
-if ((i % 3) == 0)
+if (i % 3 == 0 && i % 5 == 0)
 {
-printf("fizz ");
+printf("fizzbuzz");
 }
-else if ((i % 5) == 0 && i != 100)
+else if (i % 3 == 0)
 {
-printf("buzz ");
+printf("fizz");
 }
-else if ((i % 5) == 0 && i == 100)
+else if (i % 5 == 0)
 {
 printf("buzz");
 }
 else
 {
-if (i < 10)
-{
-putchar(i + '0');
-putchar(' ');
+printf("%d", i);
 }
-else if (i < 100)
+
+if (i < 100)
 {
-putchar((i / 10) % 10 + '0');
-putchar(i % 10 + '0');
-putchar(' ');
-}
-else
-{
-putchar((i / 100) % 10 + '0');
-putchar((i / 10) % 10 + '0');
-putchar(i % 10 + '0');
 putchar(' ');
 }
 }
-}
+
 putchar('\n');
 return (0);
 }
