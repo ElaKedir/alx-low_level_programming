@@ -1,19 +1,20 @@
 #include <stdio.h>
 
-int main()
+/**
+ * main - fizzbuzz
+ * Return: 0 (Success)
+ */
+
+int main(void)
 
 {
 int i;
 
-int fizz;
-int buzz;
-
-for(i = 1; i <= 100;i++)
+for (i = 1; i <= 100; i++)
 {
-if((i % 3) == 0)
+if ((i % 3) == 0)
 {
-printf ("fizz ");
-
+printf("fizz ");
 }
 else if ((i % 5) == 0 && i != 100)
 {
@@ -24,13 +25,11 @@ else if ((i % 5) == 0 && i == 100)
 printf("buzz");
 }
 else
-
 {
 if (i < 10)
 {
 putchar(i + '0');
 putchar(' ');
-
 }
 else if (i < 100)
 {
@@ -48,5 +47,6 @@ putchar(' ');
 }
 }
 putchar('\n');
+return (0);
 }
 
