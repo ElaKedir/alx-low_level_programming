@@ -1,16 +1,25 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _strcpy - copies one string into another
- * @dest: the string which is copies into
- * @src: the source string
- * Return: Always 0.
+ * char *_strcpy - a function that copies the string pointed to by src
+ * @dest: copy to
+ * @src: copy from
+ * Return: string
  */
-
 char *_strcpy(char *dest, char *src)
 {
-	strcpy(dest, src);
-	return (0);
+	int l = 0;
+	int x = 0;
+
+	while (*(src + l) != '\0')
+	{
+		l++;
+	}
+	for ( ; x < l ; x++)
+	{
+		dest[x] = src[x];
+	}
+	dest[l] = '\0';
+	return (dest);
 }
 
