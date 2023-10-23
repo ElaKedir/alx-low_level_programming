@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strspn - the function
+ * _strpbrk - the function
  * @s: the source string.
  * @accept: the condition.
  * Return: 0 (success).
