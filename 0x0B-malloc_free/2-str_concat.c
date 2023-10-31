@@ -10,36 +10,41 @@
  */
 
 char *str_concat(char *s1, char *s2)
+
 {
-	char *strout;
-	int i, j, k, limit;
+	int s1Length, s2Length, i, j;
+	char *ptr;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-
-	for (j = 0; s2[j] != '\0'; j++)
-		;
-
-	strout = malloc(sizeof(char) * (i + j + 1));
-
-	if (strout == NULL)
+	if (s1 == NULL || s2 == NULL)
 	{
-		free(strout);
 		return (NULL);
 	}
 
-	for (k = 0; k < i; k++)
-		strout[k] = s1[k];
+	for (s1Length = 0; s1[s1Length] != '\0'; s1Length++)
+	{
+		;
+	}
+	for (s2Length = 0; s2[s2Length] != '\0'; s2Length++)
+	{
+		;
+	}
 
-	limit = j;
-	for (j = 0; j <= limit; k++, j++)
-		strout[k] = s2[j];
+	ptr = malloc(sizeof(char) * (s1Length + s2Length + 1));
 
-	return (strout);
+	if (ptr == NULL)
+	{
+		free(ptr);
+		return (NULL);
+	}
+		for (i = 0; i < s1Length; i++)
+	{
+		ptr[i] = s1[i];
+	}
+	for (j = 0; j < s2Length; j++)
+	{
+		ptr[s1Length + j] = s2[j];
+	}
+	ptr[s1Length + s2Length] = '\0';
+	return (ptr);
 }
 
