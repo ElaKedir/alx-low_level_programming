@@ -16,27 +16,8 @@ size_t print_listint(const listint_t *h)
 
 	while (h)
 	{
-		int num = h->n;
+		printf("%d\n", h->n);
 
-		if (num == 0)
-		{
-			_putchar('0');
-		}
-		else if (num < 0)
-		{
-			_putchar('-');
-			num = -num;
-		}
-
-		while (num > 0)
-		{
-			int digit = num % 10;
-
-			_putchar(digit + '0');
-			num /= 10;
-		}
-
-		_putchar('\n');
 		h = h->next;
 		n++;
 	}
