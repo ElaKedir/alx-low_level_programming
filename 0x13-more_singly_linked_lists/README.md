@@ -1,0 +1,1 @@
+In this project I practiced and learned with one of the data structures in C called lists. These are additional projects other than the previous project on lists that we worked on as part of the alx SWE programme.
