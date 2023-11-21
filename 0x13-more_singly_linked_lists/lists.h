@@ -1,9 +1,10 @@
-#ifndef _LISTS_
-#define _LISTS_
+#ifndef LISTS_H
+#define LISTS_H
 
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+#include <stddef.h>
 
 /**
  * struct listint_s - singly linked list
@@ -22,7 +23,5 @@ typedef struct listint_s
 
 size_t print_listint(const listint_t *h);
 int _putchar(char c);
-typedef struct listint_s;
-
 
 #endif
